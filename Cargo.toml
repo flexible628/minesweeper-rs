@@ -1,0 +1,17 @@
+[package]
+name = "minesweeper"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies.sdl2]
+version = "0.37.0"
+features = ["static-link", "image", "unsafe_textures"]
+
+[dependencies.rand]
+version = "0.9.0"
+
+[dependencies.spin_sleep]
+version = "1.3.1"
+
+[profile.release]
+panic = "abort"
